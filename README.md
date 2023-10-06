@@ -1,16 +1,6 @@
 # PRESTASHOP.SUPPORTS.PRO
 
 
-  <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <section id="home">
         <h1>Welcome to Apartner.pro</h1>
         <p>Your Fullstack Development Partner</p>
