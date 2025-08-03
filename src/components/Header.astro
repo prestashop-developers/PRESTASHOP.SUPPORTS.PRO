@@ -1,0 +1,167 @@
+---
+import { getLangFromCookie, t } from '../utils/i18n';
+const lang = getLangFromCookie(Astro.request);
+---
+
+<header class="header">
+	<nav class="nav">
+		<div class="container nav-container">
+			<div class="logo">
+				<h2>PrestaShop<span class="logo-accent">.supports.pro</span></h2>
+			</div>
+			<ul class="nav-links">
+				<li><a href="/services">{t('header.services', lang)}</a></li>
+				<li><a href="/about">{t('header.about', lang)}</a></li>
+				<li><a href="/portfolio">{t('header.portfolio', lang)}</a></li>
+				<li>
+					<select id="lang-switcher" style="padding:0.4rem 1.2rem;border-radius:6px;border:1px solid #e5e7eb;font-weight:500;">
+						<option value="en">{t('header.lang_en', lang)}</option>
+						<option value="ua">{t('header.lang_ua', lang)}</option>
+					</select>
+				</li>
+				<li><a href="#contact" class="cta-button">{t('header.get_support', lang)}</a></li>
+			</ul>
+			<button class="mobile-menu-toggle" aria-label="Toggle menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</nav>
+</header>
+
+<style>
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+		transition: all 0.3s ease;
+	}
+
+	.nav-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 0;
+	}
+
+	.logo h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #2c5aa0;
+	}
+
+	.logo-accent {
+		color: #f59e0b;
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.nav-links a {
+		text-decoration: none;
+		color: #4b5563;
+		font-weight: 500;
+		transition: color 0.3s ease;
+		position: relative;
+	}
+
+	.nav-links a:hover {
+		color: #2c5aa0;
+	}
+
+	.nav-links a::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: linear-gradient(90deg, #2c5aa0, #f59e0b);
+		transition: width 0.3s ease;
+	}
+
+	.nav-links a:hover::after {
+		width: 100%;
+	}
+
+	.cta-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af) !important;
+		color: white !important;
+		padding: 0.75rem 1.5rem;
+		border-radius: 8px;
+		font-weight: 600;
+		box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+	}
+
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
+	}
+
+	.cta-button::after {
+		display: none;
+	}
+
+	.mobile-menu-toggle {
+		display: none;
+		flex-direction: column;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5rem;
+	}
+
+	.mobile-menu-toggle span {
+		width: 25px;
+		height: 3px;
+		background: #2c5aa0;
+		margin: 3px 0;
+		transition: 0.3s;
+		border-radius: 2px;
+	}
+
+	@media (max-width: 768px) {
+		.nav-links {
+			display: none;
+		}
+
+		.mobile-menu-toggle {
+			display: flex;
+		}
+
+		.logo h2 {
+			font-size: 1.25rem;
+		}
+	}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	const langSwitcher = document.getElementById('lang-switcher');
+	let lang = window.langUtil && window.langUtil.getLangFromCookie
+		? window.langUtil.getLangFromCookie()
+		: 'en';
+	if (!lang && window.langUtil) lang = window.langUtil.detectBrowserLang();
+	if (!lang) lang = 'en';
+	if (langSwitcher) {
+		langSwitcher.value = lang;
+		langSwitcher.addEventListener('change', function(e) {
+			const selected = e.target.value;
+			if (window.langUtil) window.langUtil.setLangCookie(selected);
+			window.location.reload();
+		});
+	}
+});
+</script>
+<script src="/lang-util.js" is:inline></script>

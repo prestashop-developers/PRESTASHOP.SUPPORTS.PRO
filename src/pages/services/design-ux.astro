@@ -1,0 +1,572 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "PrestaShop Design & UX Services | prestashop.supports.pro";
+const pageDescription = "Professional PrestaShop design and UX services. Responsive design, UX optimization, mobile-first approach, and brand integration for better conversions.";
+const canonicalURL = "https://prestashop.supports.pro/services/design-ux";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonical={canonicalURL}>
+	<Fragment slot="head">
+		<!-- Open Graph -->
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:type" content="service" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content="https://prestashop.supports.pro/images/design-ux-og.jpg" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		
+		<!-- Additional SEO -->
+		<meta name="keywords" content="PrestaShop design, UX optimization, responsive design, mobile-first, brand integration, e-commerce design, conversion optimization" />
+		<meta name="author" content="prestashop.supports.pro" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "PrestaShop Design & UX",
+			"description": "Professional design and user experience optimization services for PrestaShop stores",
+			"provider": {
+				"@type": "Organization",
+				"name": "prestashop.supports.pro",
+				"url": "https://prestashop.supports.pro"
+			},
+			"serviceType": "Web Design",
+			"areaServed": "Worldwide"
+		}
+		</script>
+	</Fragment>
+	
+	<Header />
+	<main>
+		<section class="service-hero">
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/">Home</a> / <a href="/#services">Services</a> / <span>Design & UX</span>
+				</div>
+				<h1>PrestaShop Design & UX</h1>
+				<p class="hero-subtitle">Create stunning, conversion-optimized PrestaShop stores that engage customers and drive sales</p>
+			</div>
+		</section>
+
+		<section class="service-content section-padding">
+			<div class="container">
+				<div class="content-grid">
+					<div class="main-content">
+						<div class="service-overview">
+							<h2>Professional Design & UX Services</h2>
+							<p>Transform your PrestaShop store with our expert design and user experience services. We create visually stunning, user-friendly e-commerce experiences that not only look great but also convert visitors into customers.</p>
+						</div>
+
+						<div class="design-process">
+							<h3>Our Design Process</h3>
+							<div class="process-timeline">
+								<div class="timeline-item">
+									<div class="timeline-icon">🔍</div>
+									<div class="timeline-content">
+										<h4>Research & Analysis</h4>
+										<p>We analyze your target audience, competitors, and current design to identify opportunities for improvement.</p>
+									</div>
+								</div>
+								<div class="timeline-item">
+									<div class="timeline-icon">✏️</div>
+									<div class="timeline-content">
+										<h4>Wireframing & Prototyping</h4>
+										<p>Create detailed wireframes and interactive prototypes to visualize the user journey and functionality.</p>
+									</div>
+								</div>
+								<div class="timeline-item">
+									<div class="timeline-icon">🎨</div>
+									<div class="timeline-content">
+										<h4>Visual Design</h4>
+										<p>Develop stunning visual designs that align with your brand and appeal to your target customers.</p>
+									</div>
+								</div>
+								<div class="timeline-item">
+									<div class="timeline-icon">📱</div>
+									<div class="timeline-content">
+										<h4>Responsive Implementation</h4>
+										<p>Build responsive designs that work perfectly across all devices and screen sizes.</p>
+									</div>
+								</div>
+								<div class="timeline-item">
+									<div class="timeline-icon">🧪</div>
+									<div class="timeline-content">
+										<h4>Testing & Optimization</h4>
+										<p>Conduct usability testing and optimize the design for maximum conversion rates.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="service-features">
+							<h3>Design Services</h3>
+							<div class="features-grid">
+								<div class="feature-item">
+									<div class="feature-icon">📱</div>
+									<h4>Responsive Design</h4>
+									<p>Mobile-first designs that provide optimal user experience across all devices and screen sizes.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">🎯</div>
+									<h4>UX Optimization</h4>
+									<p>User experience optimization focused on improving conversion rates and customer satisfaction.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">🏷️</div>
+									<h4>Brand Integration</h4>
+									<p>Seamless integration of your brand identity into the store design for consistent brand experience.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">⚡</div>
+									<h4>Performance Focused</h4>
+									<p>Designs optimized for fast loading times and excellent performance scores.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="design-packages">
+							<h3>Design Packages</h3>
+							<div class="packages-grid">
+								<div class="package-card">
+									<h4>Theme Customization</h4>
+									<div class="package-price">From $999</div>
+									<ul>
+										<li>Existing theme customization</li>
+										<li>Brand color integration</li>
+										<li>Logo and graphics update</li>
+										<li>Mobile optimization</li>
+										<li>Basic UX improvements</li>
+									</ul>
+								</div>
+								<div class="package-card featured">
+									<h4>Custom Design</h4>
+									<div class="package-price">From $2,999</div>
+									<ul>
+										<li>Complete custom design</li>
+										<li>User research & analysis</li>
+										<li>Wireframes & prototypes</li>
+										<li>Responsive implementation</li>
+										<li>Conversion optimization</li>
+										<li>A/B testing setup</li>
+									</ul>
+								</div>
+								<div class="package-card">
+									<h4>UX Audit & Optimization</h4>
+									<div class="package-price">From $1,499</div>
+									<ul>
+										<li>Comprehensive UX audit</li>
+										<li>User journey analysis</li>
+										<li>Conversion rate optimization</li>
+										<li>Performance improvements</li>
+										<li>Detailed recommendations</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar">
+						<div class="portfolio-preview">
+							<h4>Recent Design Work</h4>
+							<div class="portfolio-items">
+								<div class="portfolio-item">
+									<img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg" alt="Fashion store design" />
+									<p>Fashion Store Redesign</p>
+								</div>
+								<div class="portfolio-item">
+									<img src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg" alt="Electronics store design" />
+									<p>Electronics Marketplace</p>
+								</div>
+							</div>
+							<a href="/#portfolio" class="view-portfolio">View Full Portfolio</a>
+						</div>
+
+						<div class="cta-card">
+							<h3>Ready to Transform Your Store?</h3>
+							<p>Get a free design consultation and quote</p>
+							<a href="#contact" class="primary-button">Get Free Quote</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-cta">
+			<div class="container">
+				<h2>Ready to Create an Amazing Store Design?</h2>
+				<p>Let our design experts transform your PrestaShop store into a conversion machine</p>
+				<a href="/#contact" class="primary-button">Start Design Project</a>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.service-hero {
+		background: linear-gradient(135deg, #0f1f3c 0%, #2c5aa0 100%);
+		color: white;
+		padding: 8rem 0 4rem;
+		margin-top: 80px;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.service-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		max-width: 600px;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+	}
+
+	.service-overview {
+		margin-bottom: 3rem;
+	}
+
+	.service-overview h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.service-overview p {
+		font-size: 1.125rem;
+		color: #4b5563;
+		line-height: 1.7;
+	}
+
+	.design-process {
+		margin-bottom: 3rem;
+	}
+
+	.design-process h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.process-timeline {
+		position: relative;
+	}
+
+	.process-timeline::before {
+		content: '';
+		position: absolute;
+		left: 30px;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: linear-gradient(to bottom, #2c5aa0, #f59e0b);
+	}
+
+	.timeline-item {
+		display: flex;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		position: relative;
+	}
+
+	.timeline-icon {
+		width: 60px;
+		height: 60px;
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		color: white;
+		flex-shrink: 0;
+		z-index: 1;
+	}
+
+	.timeline-content h4 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-content p {
+		color: #6b7280;
+		line-height: 1.6;
+	}
+
+	.service-features {
+		margin-bottom: 3rem;
+	}
+
+	.service-features h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.feature-item {
+		padding: 1.5rem;
+		background: white;
+		border-radius: 12px;
+		border: 1px solid #e5e7eb;
+		transition: all 0.3s ease;
+	}
+
+	.feature-item:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-item h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.5rem;
+	}
+
+	.feature-item p {
+		color: #6b7280;
+		line-height: 1.6;
+	}
+
+	.design-packages h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.packages-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.package-card {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+
+	.package-card.featured {
+		border-color: #2c5aa0;
+		transform: scale(1.05);
+	}
+
+	.package-card h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.package-price {
+		font-size: 2rem;
+		font-weight: 700;
+		color: #2c5aa0;
+		margin-bottom: 2rem;
+	}
+
+	.package-card ul {
+		list-style: none;
+		text-align: left;
+	}
+
+	.package-card li {
+		padding: 0.5rem 0;
+		position: relative;
+		padding-left: 1.5rem;
+		color: #4b5563;
+	}
+
+	.package-card li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: #10b981;
+		font-weight: 600;
+	}
+
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.portfolio-preview {
+		background: #f8fafc;
+		padding: 2rem;
+		border-radius: 16px;
+	}
+
+	.portfolio-preview h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 1.5rem;
+	}
+
+	.portfolio-items {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.portfolio-item {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.portfolio-item img {
+		width: 60px;
+		height: 60px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+	.portfolio-item p {
+		font-size: 0.875rem;
+		color: #4b5563;
+		font-weight: 500;
+	}
+
+	.view-portfolio {
+		color: #2c5aa0;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 0.875rem;
+	}
+
+	.view-portfolio:hover {
+		text-decoration: underline;
+	}
+
+	.cta-card {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.cta-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.cta-card p {
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.contact-cta {
+		background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.contact-cta h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.contact-cta p {
+		font-size: 1.125rem;
+		color: #6b7280;
+		margin-bottom: 2rem;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 968px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.packages-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.package-card.featured {
+			transform: none;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.service-hero h1 {
+			font-size: 2rem;
+		}
+
+		.process-timeline::before {
+			display: none;
+		}
+
+		.timeline-item {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+</style>

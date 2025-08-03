@@ -1,0 +1,124 @@
+---
+const { title = '', description = '', canonical = '' } = Astro.props;
+
+const defaultTitle = "PrestaShop Support & Development Services | prestashop.supports.pro";
+const defaultDescription = "Professional PrestaShop development, customization, and support services. Expert web studio specializing in e-commerce solutions, module development, and technical support.";
+const defaultCanonical = "https://prestashop.supports.pro";
+
+const pageTitle = title || defaultTitle;
+const pageDescription = description || defaultDescription;
+const pageCanonical = canonical || defaultCanonical;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDescription} />
+		<meta name="keywords" content="PrestaShop, e-commerce development, PrestaShop support, web studio, online store, PrestaShop modules, e-commerce solutions" />
+		<link rel="canonical" href={pageCanonical} />
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={pageCanonical} />
+		<meta property="og:site_name" content="prestashop.supports.pro" />
+		<meta property="og:locale" content="en_US" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		<meta name="twitter:site" content="@prestashopsupport" />
+		
+		<!-- Additional SEO -->
+		<meta name="author" content="prestashop.supports.pro" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
+		<meta name="revisit-after" content="7 days" />
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "PrestaShop Supports Pro",
+			"url": "https://prestashop.supports.pro",
+			"description": "Professional PrestaShop development and support services",
+			"logo": "https://prestashop.supports.pro/logo.png",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+1-234-567-890",
+				"contactType": "customer service",
+				"email": "hello@prestashop.supports.pro",
+				"availableLanguage": "English"
+			},
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "US"
+			},
+			"sameAs": [
+				"https://linkedin.com/company/prestashop-supports-pro",
+				"https://github.com/prestashop-supports-pro"
+			],
+			"serviceType": "E-commerce Development",
+			"areaServed": "Worldwide",
+			"foundingDate": "2019",
+			"numberOfEmployees": "10-50"
+		}
+		</script>
+		
+		<slot name="head" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		line-height: 1.6;
+		color: #1f2937;
+		background-color: #ffffff;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.section-padding {
+		padding: 5rem 0;
+	}
+
+	@media (max-width: 768px) {
+		.section-padding {
+			padding: 3rem 0;
+		}
+export interface Props {
+	}
+	title?: string;
+</style>

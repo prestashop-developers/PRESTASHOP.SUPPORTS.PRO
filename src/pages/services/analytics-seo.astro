@@ -1,0 +1,626 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "PrestaShop Analytics & SEO Services | prestashop.supports.pro";
+const pageDescription = "Professional PrestaShop analytics and SEO optimization services. Google Analytics setup, SEO optimization, conversion tracking, and performance reports.";
+const canonicalURL = "https://prestashop.supports.pro/services/analytics-seo";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonical={canonicalURL}>
+	<Fragment slot="head">
+		<!-- Open Graph -->
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:type" content="service" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content="https://prestashop.supports.pro/images/analytics-seo-og.jpg" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		
+		<!-- Additional SEO -->
+		<meta name="keywords" content="PrestaShop SEO, Google Analytics, conversion tracking, SEO optimization, performance reports, search engine optimization, e-commerce analytics" />
+		<meta name="author" content="prestashop.supports.pro" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "PrestaShop Analytics & SEO",
+			"description": "Professional analytics and SEO optimization services for PrestaShop stores",
+			"provider": {
+				"@type": "Organization",
+				"name": "prestashop.supports.pro",
+				"url": "https://prestashop.supports.pro"
+			},
+			"serviceType": "SEO & Analytics",
+			"areaServed": "Worldwide"
+		}
+		</script>
+	</Fragment>
+	
+	<Header />
+	<main>
+		<section class="service-hero">
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/">Home</a> / <a href="/#services">Services</a> / <span>Analytics & SEO</span>
+				</div>
+				<h1>PrestaShop Analytics & SEO</h1>
+				<p class="hero-subtitle">Drive traffic and increase conversions with advanced analytics and SEO optimization</p>
+			</div>
+		</section>
+
+		<section class="service-content section-padding">
+			<div class="container">
+				<div class="content-grid">
+					<div class="main-content">
+						<div class="service-overview">
+							<h2>Professional Analytics & SEO Services</h2>
+							<p>Maximize your PrestaShop store's visibility and performance with our comprehensive analytics and SEO services. We help you understand your customers, optimize for search engines, and increase conversions through data-driven insights.</p>
+						</div>
+
+						<div class="service-categories">
+							<div class="category-tabs">
+								<button class="tab-button active" data-tab="seo">SEO Optimization</button>
+								<button class="tab-button" data-tab="analytics">Analytics Setup</button>
+								<button class="tab-button" data-tab="reporting">Performance Reporting</button>
+							</div>
+
+							<div class="tab-content active" id="seo">
+								<h3>SEO Optimization Services</h3>
+								<div class="seo-services">
+									<div class="seo-item">
+										<h4>🔍 Technical SEO Audit</h4>
+										<p>Comprehensive analysis of your store's technical SEO health, including site speed, mobile-friendliness, and crawlability issues.</p>
+									</div>
+									<div class="seo-item">
+										<h4>📝 Content Optimization</h4>
+										<p>Optimize product descriptions, category pages, and meta tags for better search engine rankings and user engagement.</p>
+									</div>
+									<div class="seo-item">
+										<h4>🏗️ Site Structure</h4>
+										<p>Improve your site architecture, URL structure, and internal linking for better search engine understanding.</p>
+									</div>
+									<div class="seo-item">
+										<h4>📱 Mobile SEO</h4>
+										<p>Ensure your PrestaShop store is fully optimized for mobile search and provides excellent mobile user experience.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-content" id="analytics">
+								<h3>Analytics Setup & Configuration</h3>
+								<div class="analytics-services">
+									<div class="analytics-item">
+										<h4>📊 Google Analytics 4</h4>
+										<p>Complete GA4 setup with enhanced e-commerce tracking, custom events, and conversion goals configuration.</p>
+									</div>
+									<div class="analytics-item">
+										<h4>🎯 Conversion Tracking</h4>
+										<p>Set up detailed conversion tracking for purchases, sign-ups, and other important business metrics.</p>
+									</div>
+									<div class="analytics-item">
+										<h4>🔗 Google Tag Manager</h4>
+										<p>Implement GTM for easy tracking code management and advanced event tracking capabilities.</p>
+									</div>
+									<div class="analytics-item">
+										<h4>📈 Search Console</h4>
+										<p>Google Search Console setup and optimization for better search performance monitoring.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-content" id="reporting">
+								<h3>Performance Reporting & Insights</h3>
+								<div class="reporting-services">
+									<div class="reporting-item">
+										<h4>📋 Monthly Reports</h4>
+										<p>Detailed monthly performance reports with actionable insights and recommendations for improvement.</p>
+									</div>
+									<div class="reporting-item">
+										<h4>🎯 KPI Tracking</h4>
+										<p>Monitor key performance indicators including traffic, conversions, revenue, and customer behavior.</p>
+									</div>
+									<div class="reporting-item">
+										<h4>🔍 Competitor Analysis</h4>
+										<p>Regular competitor analysis to identify opportunities and stay ahead in your market.</p>
+									</div>
+									<div class="reporting-item">
+										<h4>💡 Optimization Recommendations</h4>
+										<p>Data-driven recommendations for improving your store's performance and search rankings.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="seo-packages">
+							<h3>SEO & Analytics Packages</h3>
+							<div class="packages-grid">
+								<div class="package-card">
+									<h4>SEO Starter</h4>
+									<div class="package-price">$299<span>/month</span></div>
+									<ul>
+										<li>Basic SEO audit</li>
+										<li>Meta tags optimization</li>
+										<li>Google Analytics setup</li>
+										<li>Monthly performance report</li>
+										<li>Basic keyword research</li>
+									</ul>
+									<a href="/#contact" class="package-button">Choose Package</a>
+								</div>
+								<div class="package-card featured">
+									<div class="popular-badge">Most Popular</div>
+									<h4>SEO Professional</h4>
+									<div class="package-price">$599<span>/month</span></div>
+									<ul>
+										<li>Comprehensive SEO audit</li>
+										<li>Content optimization</li>
+										<li>Advanced analytics setup</li>
+										<li>Bi-weekly reports</li>
+										<li>Competitor analysis</li>
+										<li>Technical SEO fixes</li>
+									</ul>
+									<a href="/#contact" class="package-button">Choose Package</a>
+								</div>
+								<div class="package-card">
+									<h4>SEO Enterprise</h4>
+									<div class="package-price">$999<span>/month</span></div>
+									<ul>
+										<li>Full SEO management</li>
+										<li>Custom analytics dashboard</li>
+										<li>Weekly strategy calls</li>
+										<li>Advanced reporting</li>
+										<li>Link building campaign</li>
+										<li>Dedicated SEO manager</li>
+									</ul>
+									<a href="/#contact" class="package-button">Choose Package</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar">
+						<div class="seo-checklist">
+							<h4>SEO Checklist</h4>
+							<ul class="checklist">
+								<li>✅ Site Speed Optimization</li>
+								<li>✅ Mobile Responsiveness</li>
+								<li>✅ Meta Tags & Descriptions</li>
+								<li>✅ URL Structure</li>
+								<li>✅ Internal Linking</li>
+								<li>✅ XML Sitemap</li>
+								<li>✅ Schema Markup</li>
+								<li>✅ Image Optimization</li>
+								<li>✅ SSL Certificate</li>
+								<li>✅ Analytics Tracking</li>
+							</ul>
+						</div>
+
+						<div class="tools-card">
+							<h4>Tools We Use</h4>
+							<div class="tools-list">
+								<div class="tool-item">
+									<span class="tool-icon">📊</span>
+									<span>Google Analytics</span>
+								</div>
+								<div class="tool-item">
+									<span class="tool-icon">🔍</span>
+									<span>Google Search Console</span>
+								</div>
+								<div class="tool-item">
+									<span class="tool-icon">🏷️</span>
+									<span>Google Tag Manager</span>
+								</div>
+								<div class="tool-item">
+									<span class="tool-icon">📈</span>
+									<span>SEMrush</span>
+								</div>
+								<div class="tool-item">
+									<span class="tool-icon">🎯</span>
+									<span>Ahrefs</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-cta">
+			<div class="container">
+				<h2>Ready to Boost Your Store's Performance?</h2>
+				<p>Get a free SEO audit and analytics consultation from our experts</p>
+				<a href="/#contact" class="primary-button">Get Free SEO Audit</a>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.service-hero {
+		background: linear-gradient(135deg, #0f1f3c 0%, #2c5aa0 100%);
+		color: white;
+		padding: 8rem 0 4rem;
+		margin-top: 80px;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.service-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		max-width: 600px;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+	}
+
+	.service-overview {
+		margin-bottom: 3rem;
+	}
+
+	.service-overview h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.service-overview p {
+		font-size: 1.125rem;
+		color: #4b5563;
+		line-height: 1.7;
+	}
+
+	.service-categories {
+		margin-bottom: 3rem;
+	}
+
+	.category-tabs {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 2rem;
+		border-bottom: 2px solid #e5e7eb;
+	}
+
+	.tab-button {
+		background: none;
+		border: none;
+		padding: 1rem 1.5rem;
+		font-size: 1rem;
+		font-weight: 600;
+		color: #6b7280;
+		cursor: pointer;
+		border-bottom: 3px solid transparent;
+		transition: all 0.3s ease;
+	}
+
+	.tab-button.active {
+		color: #2c5aa0;
+		border-bottom-color: #2c5aa0;
+	}
+
+	.tab-content {
+		display: none;
+	}
+
+	.tab-content.active {
+		display: block;
+	}
+
+	.tab-content h3 {
+		font-size: 1.5rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.seo-services,
+	.analytics-services,
+	.reporting-services {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.seo-item,
+	.analytics-item,
+	.reporting-item {
+		padding: 1.5rem;
+		background: #f8fafc;
+		border-radius: 12px;
+		border-left: 4px solid #2c5aa0;
+	}
+
+	.seo-item h4,
+	.analytics-item h4,
+	.reporting-item h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.75rem;
+	}
+
+	.seo-item p,
+	.analytics-item p,
+	.reporting-item p {
+		color: #6b7280;
+		line-height: 1.6;
+		font-size: 0.875rem;
+	}
+
+	.seo-packages {
+		margin-bottom: 3rem;
+	}
+
+	.seo-packages h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.packages-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.package-card {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+		text-align: center;
+		position: relative;
+		transition: all 0.3s ease;
+	}
+
+	.package-card.featured {
+		border-color: #2c5aa0;
+		transform: scale(1.05);
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #2c5aa0;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.package-card h4 {
+		font-size: 1.5rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.package-price {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #2c5aa0;
+		margin-bottom: 2rem;
+	}
+
+	.package-price span {
+		font-size: 1rem;
+		color: #6b7280;
+		font-weight: 400;
+	}
+
+	.package-card ul {
+		list-style: none;
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.package-card li {
+		padding: 0.5rem 0;
+		position: relative;
+		padding-left: 1.5rem;
+		color: #4b5563;
+	}
+
+	.package-card li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: #10b981;
+		font-weight: 600;
+	}
+
+	.package-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 0.75rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.package-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+	}
+
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.seo-checklist {
+		background: #f8fafc;
+		padding: 2rem;
+		border-radius: 16px;
+	}
+
+	.seo-checklist h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 1.5rem;
+	}
+
+	.checklist {
+		list-style: none;
+	}
+
+	.checklist li {
+		padding: 0.5rem 0;
+		color: #4b5563;
+		font-size: 0.875rem;
+	}
+
+	.tools-card {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+	}
+
+	.tools-card h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	.tools-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.tool-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.75rem;
+		background: #f8fafc;
+		border-radius: 8px;
+	}
+
+	.tool-icon {
+		font-size: 1.25rem;
+	}
+
+	.contact-cta {
+		background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.contact-cta h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.contact-cta p {
+		font-size: 1.125rem;
+		color: #6b7280;
+		margin-bottom: 2rem;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 968px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.packages-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.package-card.featured {
+			transform: none;
+		}
+
+		.seo-services,
+		.analytics-services,
+		.reporting-services {
+			grid-template-columns: 1fr;
+		}
+
+		.service-hero h1 {
+			font-size: 2rem;
+		}
+
+		.category-tabs {
+			flex-direction: column;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const tabButtons = document.querySelectorAll('.tab-button');
+		const tabContents = document.querySelectorAll('.tab-content');
+
+		tabButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				const targetTab = button.getAttribute('data-tab');
+
+				// Remove active class from all buttons and contents
+				tabButtons.forEach(btn => btn.classList.remove('active'));
+				tabContents.forEach(content => content.classList.remove('active'));
+
+				// Add active class to clicked button and corresponding content
+				button.classList.add('active');
+				document.getElementById(targetTab).classList.add('active');
+			});
+		});
+	});
+</script>

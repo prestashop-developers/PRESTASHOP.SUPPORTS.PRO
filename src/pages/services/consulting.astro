@@ -1,0 +1,680 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "PrestaShop Consulting Services | prestashop.supports.pro";
+const pageDescription = "Strategic PrestaShop consulting services. Technical audits, architecture planning, best practices, and growth strategies by certified PrestaShop experts.";
+const canonicalURL = "https://prestashop.supports.pro/services/consulting";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonical={canonicalURL}>
+	<Fragment slot="head">
+		<!-- Open Graph -->
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:type" content="service" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content="https://prestashop.supports.pro/images/consulting-og.jpg" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		
+		<!-- Additional SEO -->
+		<meta name="keywords" content="PrestaShop consulting, technical audit, architecture planning, e-commerce strategy, PrestaShop best practices, growth strategies" />
+		<meta name="author" content="prestashop.supports.pro" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "PrestaShop Consulting",
+			"description": "Strategic consulting services for PrestaShop e-commerce businesses",
+			"provider": {
+				"@type": "Organization",
+				"name": "prestashop.supports.pro",
+				"url": "https://prestashop.supports.pro"
+			},
+			"serviceType": "Business Consulting",
+			"areaServed": "Worldwide"
+		}
+		</script>
+	</Fragment>
+	
+	<Header />
+	<main>
+		<section class="service-hero">
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/">Home</a> / <a href="/#services">Services</a> / <span>Consulting</span>
+				</div>
+				<h1>PrestaShop Consulting</h1>
+				<p class="hero-subtitle">Strategic guidance to help your e-commerce business make the right decisions and achieve sustainable growth</p>
+			</div>
+		</section>
+
+		<section class="service-content section-padding">
+			<div class="container">
+				<div class="content-grid">
+					<div class="main-content">
+						<div class="service-overview">
+							<h2>Strategic PrestaShop Consulting</h2>
+							<p>Our expert consultants provide strategic guidance to help you make informed decisions about your PrestaShop store. From technical architecture to business strategy, we help you optimize every aspect of your e-commerce operation.</p>
+						</div>
+
+						<div class="consulting-areas">
+							<h3>Consulting Areas</h3>
+							<div class="areas-grid">
+								<div class="area-card">
+									<div class="area-icon">🔍</div>
+									<h4>Technical Audits</h4>
+									<p>Comprehensive analysis of your store's technical health, performance, and security vulnerabilities.</p>
+									<ul>
+										<li>Code quality assessment</li>
+										<li>Performance bottlenecks</li>
+										<li>Security vulnerabilities</li>
+										<li>Module compatibility</li>
+									</ul>
+								</div>
+								<div class="area-card">
+									<div class="area-icon">🏗️</div>
+									<h4>Architecture Planning</h4>
+									<p>Strategic planning for scalable, maintainable PrestaShop architectures that grow with your business.</p>
+									<ul>
+										<li>Scalability planning</li>
+										<li>Technology stack selection</li>
+										<li>Integration strategies</li>
+										<li>Future-proofing recommendations</li>
+									</ul>
+								</div>
+								<div class="area-card">
+									<div class="area-icon">📋</div>
+									<h4>Best Practices</h4>
+									<p>Implementation of industry best practices for development, security, and performance optimization.</p>
+									<ul>
+										<li>Development workflows</li>
+										<li>Security protocols</li>
+										<li>Performance optimization</li>
+										<li>Maintenance procedures</li>
+									</ul>
+								</div>
+								<div class="area-card">
+									<div class="area-icon">📈</div>
+									<h4>Growth Strategies</h4>
+									<p>Business-focused consulting to help you scale your e-commerce operations effectively.</p>
+									<ul>
+										<li>Market expansion planning</li>
+										<li>Conversion optimization</li>
+										<li>Customer retention strategies</li>
+										<li>Revenue growth tactics</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="consulting-process">
+							<h3>Our Consulting Process</h3>
+							<div class="process-flow">
+								<div class="process-step">
+									<div class="step-icon">1</div>
+									<h4>Discovery Session</h4>
+									<p>In-depth discussion about your business goals, current challenges, and technical requirements.</p>
+								</div>
+								<div class="process-arrow">→</div>
+								<div class="process-step">
+									<div class="step-icon">2</div>
+									<h4>Analysis & Assessment</h4>
+									<p>Comprehensive analysis of your current setup, identifying opportunities and potential issues.</p>
+								</div>
+								<div class="process-arrow">→</div>
+								<div class="process-step">
+									<div class="step-icon">3</div>
+									<h4>Strategic Recommendations</h4>
+									<p>Detailed recommendations with prioritized action items and implementation roadmap.</p>
+								</div>
+								<div class="process-arrow">→</div>
+								<div class="process-step">
+									<div class="step-icon">4</div>
+									<h4>Implementation Support</h4>
+									<p>Ongoing support and guidance during the implementation of recommended strategies.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="consulting-packages">
+							<h3>Consulting Packages</h3>
+							<div class="packages-grid">
+								<div class="package-card">
+									<h4>Quick Assessment</h4>
+									<div class="package-price">$499</div>
+									<div class="package-duration">2-3 hours</div>
+									<ul>
+										<li>Initial consultation call</li>
+										<li>Basic technical review</li>
+										<li>Priority recommendations</li>
+										<li>Written summary report</li>
+									</ul>
+									<a href="/#contact" class="package-button">Book Assessment</a>
+								</div>
+								<div class="package-card featured">
+									<div class="popular-badge">Most Popular</div>
+									<h4>Comprehensive Audit</h4>
+									<div class="package-price">$1,999</div>
+									<div class="package-duration">1-2 weeks</div>
+									<ul>
+										<li>Full technical audit</li>
+										<li>Business strategy review</li>
+										<li>Detailed action plan</li>
+										<li>Implementation roadmap</li>
+										<li>Follow-up consultation</li>
+									</ul>
+									<a href="/#contact" class="package-button">Book Audit</a>
+								</div>
+								<div class="package-card">
+									<h4>Strategic Partnership</h4>
+									<div class="package-price">$4,999</div>
+									<div class="package-duration">Monthly retainer</div>
+									<ul>
+										<li>Dedicated consultant</li>
+										<li>Monthly strategy sessions</li>
+										<li>Ongoing optimization</li>
+										<li>Priority support access</li>
+										<li>Quarterly business reviews</li>
+									</ul>
+									<a href="/#contact" class="package-button">Start Partnership</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar">
+						<div class="expertise-card">
+							<h4>Our Expertise</h4>
+							<div class="expertise-stats">
+								<div class="stat">
+									<span class="stat-number">500+</span>
+									<span class="stat-label">Projects Consulted</span>
+								</div>
+								<div class="stat">
+									<span class="stat-number">5+</span>
+									<span class="stat-label">Years Experience</span>
+								</div>
+								<div class="stat">
+									<span class="stat-number">98%</span>
+									<span class="stat-label">Client Satisfaction</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="testimonial-card">
+							<div class="testimonial-content">
+								<p>"The consulting session helped us identify critical performance issues and provided a clear roadmap for improvement. Highly recommended!"</p>
+								<div class="testimonial-author">
+									<strong>Sarah Johnson</strong>
+									<span>E-commerce Manager</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="contact-card">
+							<h4>Need Custom Consulting?</h4>
+							<p>Have specific requirements? Let's discuss a custom consulting package tailored to your needs.</p>
+							<a href="/#contact" class="primary-button">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-cta">
+			<div class="container">
+				<h2>Ready to Take Your Business to the Next Level?</h2>
+				<p>Get expert guidance and strategic insights from our PrestaShop consulting specialists</p>
+				<a href="/#contact" class="primary-button">Schedule Consultation</a>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.service-hero {
+		background: linear-gradient(135deg, #0f1f3c 0%, #2c5aa0 100%);
+		color: white;
+		padding: 8rem 0 4rem;
+		margin-top: 80px;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.service-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		max-width: 600px;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+	}
+
+	.service-overview {
+		margin-bottom: 3rem;
+	}
+
+	.service-overview h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.service-overview p {
+		font-size: 1.125rem;
+		color: #4b5563;
+		line-height: 1.7;
+	}
+
+	.consulting-areas {
+		margin-bottom: 3rem;
+	}
+
+	.consulting-areas h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.areas-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.area-card {
+		background: white;
+		border: 1px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+		transition: all 0.3s ease;
+	}
+
+	.area-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.area-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.area-card h4 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.area-card p {
+		color: #6b7280;
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.area-card ul {
+		list-style: none;
+	}
+
+	.area-card li {
+		padding: 0.25rem 0;
+		color: #4b5563;
+		font-size: 0.875rem;
+		position: relative;
+		padding-left: 1rem;
+	}
+
+	.area-card li::before {
+		content: '•';
+		position: absolute;
+		left: 0;
+		color: #2c5aa0;
+		font-weight: 600;
+	}
+
+	.consulting-process {
+		margin-bottom: 3rem;
+	}
+
+	.consulting-process h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.process-flow {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		overflow-x: auto;
+		padding: 1rem 0;
+	}
+
+	.process-step {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+		text-align: center;
+		min-width: 200px;
+		flex-shrink: 0;
+	}
+
+	.step-icon {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		font-size: 1.25rem;
+		margin: 0 auto 1rem;
+	}
+
+	.process-step h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.75rem;
+	}
+
+	.process-step p {
+		color: #6b7280;
+		line-height: 1.5;
+		font-size: 0.875rem;
+	}
+
+	.process-arrow {
+		font-size: 2rem;
+		color: #2c5aa0;
+		font-weight: 600;
+		flex-shrink: 0;
+	}
+
+	.consulting-packages h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.packages-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.package-card {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+		text-align: center;
+		position: relative;
+		transition: all 0.3s ease;
+	}
+
+	.package-card.featured {
+		border-color: #2c5aa0;
+		transform: scale(1.05);
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #2c5aa0;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.package-card h4 {
+		font-size: 1.5rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.package-price {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #2c5aa0;
+		margin-bottom: 0.5rem;
+	}
+
+	.package-duration {
+		color: #6b7280;
+		font-size: 0.875rem;
+		margin-bottom: 2rem;
+	}
+
+	.package-card ul {
+		list-style: none;
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.package-card li {
+		padding: 0.5rem 0;
+		position: relative;
+		padding-left: 1.5rem;
+		color: #4b5563;
+	}
+
+	.package-card li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: #10b981;
+		font-weight: 600;
+	}
+
+	.package-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 0.75rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.package-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+	}
+
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.expertise-card {
+		background: #f8fafc;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.expertise-card h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.expertise-stats {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.stat-number {
+		font-size: 2rem;
+		font-weight: 700;
+		color: #2c5aa0;
+		line-height: 1;
+	}
+
+	.stat-label {
+		font-size: 0.875rem;
+		color: #6b7280;
+		font-weight: 500;
+	}
+
+	.testimonial-card {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+	}
+
+	.testimonial-content p {
+		color: #4b5563;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+
+	.testimonial-author strong {
+		color: #0f1f3c;
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.testimonial-author span {
+		color: #6b7280;
+		font-size: 0.875rem;
+	}
+
+	.contact-card {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.contact-card h4 {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.contact-card p {
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.contact-cta {
+		background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.contact-cta h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.contact-cta p {
+		font-size: 1.125rem;
+		color: #6b7280;
+		margin-bottom: 2rem;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 968px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.areas-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.packages-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.package-card.featured {
+			transform: none;
+		}
+
+		.process-flow {
+			flex-direction: column;
+		}
+
+		.process-arrow {
+			transform: rotate(90deg);
+		}
+
+		.service-hero h1 {
+			font-size: 2rem;
+		}
+	}
+</style>

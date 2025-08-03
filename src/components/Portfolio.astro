@@ -1,0 +1,219 @@
+---
+import { getLangFromCookie, t } from '../utils/i18n';
+import { PORTFOLIO_CASES } from './portfolio-cases.ts';
+const lang = getLangFromCookie(Astro.request);
+const tags = [
+  { tag: 'all', label: lang === 'ua' ? 'Всі' : 'All' },
+  { tag: 'e-commerce', label: lang === 'ua' ? 'E-commerce' : 'E-commerce' },
+  { tag: 'b2b', label: lang === 'ua' ? 'B2B' : 'B2B' },
+  { tag: 'food', label: lang === 'ua' ? 'Їжа' : 'Food' },
+  { tag: 'auto', label: lang === 'ua' ? 'Авто' : 'Auto' },
+  { tag: 'beauty', label: lang === 'ua' ? 'Краса' : 'Beauty' },
+  { tag: 'services', label: lang === 'ua' ? 'Послуги' : 'Services' },
+  { tag: 'education', label: lang === 'ua' ? 'Освіта' : 'Education' },
+];
+---
+
+<section id="portfolio" class="portfolio section-padding">
+	<div class="container">
+		<div class="section-header">
+			<h2>{lang === 'ua' ? 'Останні проєкти' : 'Recent Projects'}</h2>
+			<p>{lang === 'ua' ? 'Вітрина наших реалізованих рішень на PrestaShop' : 'Showcasing our latest PrestaShop implementations and success stories'}</p>
+		</div>
+
+		<div class="portfolio-sort">
+			{tags.map(tag => (
+				<button type="button" class="sort-btn" data-tag={tag.tag}>{tag.label}</button>
+			))}
+		</div>
+
+		<div class="portfolio-grid" id="portfolio-list">
+			{PORTFOLIO_CASES.map(item => (
+				<div class="portfolio-item" data-tags={item.tags.join(' ')}>
+					<div class="portfolio-image">
+						<img src={item.image} alt={item.subtitle} />
+						<div class="portfolio-overlay">
+							<h4>{item.subtitle}</h4>
+							<p>{item.description}</p>
+						</div>
+					</div>
+					<div class="portfolio-info">
+						<h3>{item.title}</h3>
+						<p>{item.description}</p>
+						<div class="tech-stack">
+							{item.stack.map(s => <span>{s}</span>)}
+						</div>
+					</div>
+				</div>
+			))}
+		</div>
+
+		<div class="portfolio-cta">
+			<p>{lang === 'ua' ? 'Бажаєте побачити тут свій проєкт?' : 'Ready to see your project here?'}</p>
+			<a href="#contact" class="primary-button">{lang === 'ua' ? 'Почати проєкт' : 'Start Your Project'}</a>
+		</div>
+	</div>
+</section>
+<script is:inline>
+  // Inject portfolio cases for client-side filtering
+  // @ts-ignore
+  window.PORTFOLIO_CASES = JSON.parse(`${JSON.stringify(PORTFOLIO_CASES)}`);
+</script>
+<script src="/portfolio-sort.js" is:inline></script>
+
+<style>
+	.portfolio {
+		background: white;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.section-header p {
+		font-size: 1.25rem;
+		color: #6b7280;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.portfolio-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.portfolio-item {
+		background: white;
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		transition: all 0.3s ease;
+	}
+
+	.portfolio-item:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+	}
+
+	.portfolio-image {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.portfolio-image img {
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.portfolio-item:hover .portfolio-image img {
+		transform: scale(1.05);
+	}
+
+	.portfolio-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+		color: white;
+		padding: 2rem;
+		transform: translateY(100%);
+		transition: transform 0.3s ease;
+	}
+
+	.portfolio-item:hover .portfolio-overlay {
+		transform: translateY(0);
+	}
+
+	.portfolio-overlay h4 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+
+	.portfolio-info {
+		padding: 1.5rem;
+	}
+
+	.portfolio-info h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.75rem;
+	}
+
+	.portfolio-info p {
+		color: #6b7280;
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.tech-stack {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tech-stack span {
+		background: #f3f4f6;
+		color: #374151;
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.portfolio-cta {
+		text-align: center;
+		padding: 3rem;
+		background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+		border-radius: 16px;
+	}
+
+	.portfolio-cta p {
+		font-size: 1.25rem;
+		color: #4b5563;
+		margin-bottom: 1.5rem;
+		font-weight: 500;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 768px) {
+		.portfolio-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+	}
+</style>

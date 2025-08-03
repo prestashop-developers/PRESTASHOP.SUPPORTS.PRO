@@ -1,0 +1,172 @@
+---
+import { getLangFromCookie, t } from '../utils/i18n';
+const lang = getLangFromCookie(Astro.request);
+---
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>PrestaShop<span class="logo-accent">.supports.pro</span></h3>
+				<p>Professional PrestaShop development and support services. Your trusted partner for e-commerce success.</p>
+				<div class="social-links">
+					<a href="#" aria-label="LinkedIn">💼</a>
+					<a href="#" aria-label="GitHub">🔗</a>
+					<a href="#" aria-label="Twitter">🐦</a>
+				</div>
+			</div>
+			
+			<div class="footer-section">
+				<h4>{t('footer.services', lang)}</h4>
+				<ul>
+					<li><a href="#services">{t('services.custom.title', lang)}</a></li>
+					<li><a href="#services">{t('services.support.title', lang)}</a></li>
+					<li><a href="#services">{t('services.design.title', lang)}</a></li>
+					<li><a href="#services">{t('services.migration.title', lang)}</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-section">
+				<h4>{t('footer.about', lang)}</h4>
+				<ul>
+					<li><a href="#about">{t('footer.about', lang)}</a></li>
+					<li><a href="#portfolio">{t('footer.portfolio', lang)}</a></li>
+					<li><a href="#contact">{t('footer.contact', lang)}</a></li>
+					<li><a href="#">{t('footer.privacy', lang)}</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-section">
+				<h4>{t('footer.get_in_touch', lang)}</h4>
+				<ul class="contact-info">
+					<li>📧 {t('footer.email', lang)}</li>
+					<li>💬 {t('footer.live_chat', lang)}</li>
+					<li>🌍 {t('footer.worldwide', lang)}</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<p>&copy; 2025 prestashop.supports.pro. {t('footer.rights', lang)}</p>
+			<p>{t('footer.trademark', lang)}</p>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		background: #0f1f3c;
+		color: white;
+		padding: 3rem 0 1rem;
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.footer-section h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.logo-accent {
+		color: #f59e0b;
+	}
+
+	.footer-section h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.footer-section p {
+		opacity: 0.8;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.footer-section ul {
+		list-style: none;
+	}
+
+	.footer-section ul li {
+		margin-bottom: 0.75rem;
+	}
+
+	.footer-section ul li a {
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.footer-section ul li a:hover {
+		color: #f59e0b;
+	}
+
+	.contact-info li {
+		opacity: 0.8;
+		font-size: 0.875rem;
+	}
+
+	.social-links {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.social-links a {
+		width: 40px;
+		height: 40px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.25rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+	}
+
+	.social-links a:hover {
+		background: #f59e0b;
+		transform: translateY(-2px);
+	}
+
+	.footer-bottom {
+		text-align: center;
+		padding-top: 2rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.footer-bottom p {
+		opacity: 0.6;
+		font-size: 0.875rem;
+	}
+
+	.footer-bottom p:first-child {
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 968px) {
+		.footer-content {
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.footer-content {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+
+		.social-links {
+			justify-content: center;
+		}
+	}
+</style>

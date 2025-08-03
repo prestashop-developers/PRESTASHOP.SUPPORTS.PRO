@@ -1,0 +1,542 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "24/7 PrestaShop Technical Support Services | prestashop.supports.pro";
+const pageDescription = "Professional PrestaShop technical support and maintenance services. 24/7 bug fixes, security updates, performance monitoring, and emergency support by certified experts.";
+const canonicalURL = "https://prestashop.supports.pro/services/technical-support";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonical={canonicalURL}>
+	<Fragment slot="head">
+		<!-- Open Graph -->
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:type" content="service" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content="https://prestashop.supports.pro/images/technical-support-og.jpg" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		
+		<!-- Additional SEO -->
+		<meta name="keywords" content="PrestaShop support, technical support, PrestaShop maintenance, bug fixes, security updates, 24/7 support, PrestaShop troubleshooting" />
+		<meta name="author" content="prestashop.supports.pro" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "PrestaShop Technical Support",
+			"description": "24/7 technical support and maintenance services for PrestaShop stores",
+			"provider": {
+				"@type": "Organization",
+				"name": "prestashop.supports.pro",
+				"url": "https://prestashop.supports.pro"
+			},
+			"serviceType": "Technical Support",
+			"areaServed": "Worldwide",
+			"availableChannel": {
+				"@type": "ServiceChannel",
+				"availableLanguage": "English",
+				"serviceType": "24/7 Support"
+			}
+		}
+		</script>
+	</Fragment>
+	
+	<Header />
+	<main>
+		<section class="service-hero">
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/">Home</a> / <a href="/#services">Services</a> / <span>Technical Support</span>
+				</div>
+				<h1>24/7 PrestaShop Technical Support</h1>
+				<p class="hero-subtitle">Reliable technical support and maintenance to keep your PrestaShop store running smoothly around the clock</p>
+			</div>
+		</section>
+
+		<section class="service-content section-padding">
+			<div class="container">
+				<div class="content-grid">
+					<div class="main-content">
+						<div class="service-overview">
+							<h2>Professional Technical Support Services</h2>
+							<p>Our dedicated support team provides comprehensive technical assistance for your PrestaShop store. From urgent bug fixes to proactive maintenance, we ensure your e-commerce platform operates at peak performance 24/7.</p>
+						</div>
+
+						<div class="support-plans">
+							<h3>Support Plans</h3>
+							<div class="plans-grid">
+								<div class="plan-card">
+									<h4>Basic Support</h4>
+									<div class="plan-price">$99<span>/month</span></div>
+									<ul>
+										<li>Business hours support (9-5)</li>
+										<li>Bug fixes & troubleshooting</li>
+										<li>Email support</li>
+										<li>Monthly security updates</li>
+										<li>Basic performance monitoring</li>
+									</ul>
+									<a href="/#contact" class="plan-button">Choose Plan</a>
+								</div>
+								<div class="plan-card featured">
+									<div class="popular-badge">Most Popular</div>
+									<h4>Professional Support</h4>
+									<div class="plan-price">$199<span>/month</span></div>
+									<ul>
+										<li>24/7 priority support</li>
+										<li>Emergency response (2h)</li>
+										<li>Phone & chat support</li>
+										<li>Weekly security updates</li>
+										<li>Advanced monitoring</li>
+										<li>Performance optimization</li>
+									</ul>
+									<a href="/#contact" class="plan-button">Choose Plan</a>
+								</div>
+								<div class="plan-card">
+									<h4>Enterprise Support</h4>
+									<div class="plan-price">$399<span>/month</span></div>
+									<ul>
+										<li>Dedicated support manager</li>
+										<li>Instant emergency response</li>
+										<li>All communication channels</li>
+										<li>Daily security monitoring</li>
+										<li>Proactive maintenance</li>
+										<li>Custom SLA agreements</li>
+									</ul>
+									<a href="/#contact" class="plan-button">Choose Plan</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="service-features">
+							<h3>What's Included</h3>
+							<div class="features-grid">
+								<div class="feature-item">
+									<div class="feature-icon">🔧</div>
+									<h4>Bug Fixes & Troubleshooting</h4>
+									<p>Quick resolution of technical issues, errors, and functionality problems in your PrestaShop store.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">🛡️</div>
+									<h4>Security Updates</h4>
+									<p>Regular security patches, vulnerability assessments, and protection against threats.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">📊</div>
+									<h4>Performance Monitoring</h4>
+									<p>Continuous monitoring of site performance, uptime, and user experience metrics.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">🚨</div>
+									<h4>Emergency Support</h4>
+									<p>Immediate response to critical issues that affect your store's availability or functionality.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar">
+						<div class="emergency-card">
+							<h3>🚨 Emergency Support</h3>
+							<p>Critical issue? Get immediate help</p>
+							<a href="tel:+1234567890" class="emergency-button">Call Now</a>
+							<p class="emergency-note">Available 24/7 for urgent issues</p>
+						</div>
+
+						<div class="response-times">
+							<h4>Response Times</h4>
+							<div class="response-item">
+								<span class="priority critical">Critical</span>
+								<span class="time">< 1 hour</span>
+							</div>
+							<div class="response-item">
+								<span class="priority high">High</span>
+								<span class="time">< 4 hours</span>
+							</div>
+							<div class="response-item">
+								<span class="priority medium">Medium</span>
+								<span class="time">< 24 hours</span>
+							</div>
+							<div class="response-item">
+								<span class="priority low">Low</span>
+								<span class="time">< 72 hours</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-cta">
+			<div class="container">
+				<h2>Need Immediate Support?</h2>
+				<p>Our expert team is ready to help resolve your PrestaShop issues quickly and efficiently</p>
+				<a href="/#contact" class="primary-button">Get Support Now</a>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.service-hero {
+		background: linear-gradient(135deg, #0f1f3c 0%, #2c5aa0 100%);
+		color: white;
+		padding: 8rem 0 4rem;
+		margin-top: 80px;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.service-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		max-width: 600px;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+	}
+
+	.service-overview {
+		margin-bottom: 3rem;
+	}
+
+	.service-overview h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.service-overview p {
+		font-size: 1.125rem;
+		color: #4b5563;
+		line-height: 1.7;
+	}
+
+	.support-plans {
+		margin-bottom: 3rem;
+	}
+
+	.support-plans h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.plans-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.plan-card {
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 16px;
+		padding: 2rem;
+		text-align: center;
+		position: relative;
+		transition: all 0.3s ease;
+	}
+
+	.plan-card.featured {
+		border-color: #2c5aa0;
+		transform: scale(1.05);
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #2c5aa0;
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.plan-card h4 {
+		font-size: 1.5rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.plan-price {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #2c5aa0;
+		margin-bottom: 2rem;
+	}
+
+	.plan-price span {
+		font-size: 1rem;
+		color: #6b7280;
+		font-weight: 400;
+	}
+
+	.plan-card ul {
+		list-style: none;
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.plan-card li {
+		padding: 0.5rem 0;
+		position: relative;
+		padding-left: 1.5rem;
+		color: #4b5563;
+	}
+
+	.plan-card li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: #10b981;
+		font-weight: 600;
+	}
+
+	.plan-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 0.75rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.plan-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+	}
+
+	.service-features h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.feature-item {
+		padding: 1.5rem;
+		background: white;
+		border-radius: 12px;
+		border: 1px solid #e5e7eb;
+		transition: all 0.3s ease;
+	}
+
+	.feature-item:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-item h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.5rem;
+	}
+
+	.feature-item p {
+		color: #6b7280;
+		line-height: 1.6;
+	}
+
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.emergency-card {
+		background: linear-gradient(135deg, #dc2626, #b91c1c);
+		color: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.emergency-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.emergency-card p {
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.emergency-button {
+		background: white;
+		color: #dc2626;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+
+	.emergency-note {
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+
+	.response-times {
+		background: #f8fafc;
+		padding: 2rem;
+		border-radius: 16px;
+	}
+
+	.response-times h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.response-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.75rem 0;
+		border-bottom: 1px solid #e5e7eb;
+	}
+
+	.response-item:last-child {
+		border-bottom: none;
+	}
+
+	.priority {
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.priority.critical {
+		background: #fee2e2;
+		color: #dc2626;
+	}
+
+	.priority.high {
+		background: #fef3c7;
+		color: #d97706;
+	}
+
+	.priority.medium {
+		background: #dbeafe;
+		color: #2563eb;
+	}
+
+	.priority.low {
+		background: #d1fae5;
+		color: #059669;
+	}
+
+	.time {
+		font-weight: 600;
+		color: #0f1f3c;
+	}
+
+	.contact-cta {
+		background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.contact-cta h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.contact-cta p {
+		font-size: 1.125rem;
+		color: #6b7280;
+		margin-bottom: 2rem;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 968px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.plans-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.plan-card.featured {
+			transform: none;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.service-hero h1 {
+			font-size: 2rem;
+		}
+	}
+</style>

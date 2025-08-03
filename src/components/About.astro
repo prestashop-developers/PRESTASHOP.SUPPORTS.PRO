@@ -1,0 +1,200 @@
+---
+---
+
+<section id="about" class="about section-padding">
+	<div class="container">
+		<div class="about-content">
+			<div class="about-text">
+				<h2>Why Choose prestashop.supports.pro?</h2>
+				<p class="about-intro">
+					We are a specialized web studio with deep expertise in PrestaShop development and e-commerce solutions. 
+					Our team combines technical excellence with business understanding to deliver results that matter.
+				</p>
+				
+				<div class="expertise-grid">
+					<div class="expertise-item">
+						<div class="expertise-icon">🏆</div>
+						<h4>Certified Experts</h4>
+						<p>PrestaShop certified developers with proven track record</p>
+					</div>
+					<div class="expertise-item">
+						<div class="expertise-icon">⚡</div>
+						<h4>Fast Delivery</h4>
+						<p>Quick turnaround times without compromising quality</p>
+					</div>
+					<div class="expertise-item">
+						<div class="expertise-icon">🛡️</div>
+						<h4>Secure Solutions</h4>
+						<p>Security-first approach in all our developments</p>
+					</div>
+					<div class="expertise-item">
+						<div class="expertise-icon">💬</div>
+						<h4>Clear Communication</h4>
+						<p>Regular updates and transparent project management</p>
+					</div>
+				</div>
+
+				<div class="cta-section">
+					<a href="#contact" class="primary-button">Start Your Project</a>
+				</div>
+			</div>
+			<div class="about-image">
+				<img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Professional development team" />
+				<div class="experience-badge">
+					<span class="experience-number">5+</span>
+					<span class="experience-text">Years of PrestaShop Excellence</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about {
+		background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+	}
+
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.about h2 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: #0f1f3c;
+		margin-bottom: 1.5rem;
+	}
+
+	.about-intro {
+		font-size: 1.125rem;
+		color: #4b5563;
+		margin-bottom: 2.5rem;
+		line-height: 1.7;
+	}
+
+	.expertise-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.expertise-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 1.5rem;
+		background: white;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s ease;
+	}
+
+	.expertise-item:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.expertise-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.expertise-item h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.5rem;
+	}
+
+	.expertise-item p {
+		font-size: 0.875rem;
+		color: #6b7280;
+		line-height: 1.5;
+	}
+
+	.about-image {
+		position: relative;
+	}
+
+	.about-image img {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+		border-radius: 20px;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	}
+
+	.experience-badge {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		background: rgba(44, 90, 160, 0.95);
+		color: white;
+		padding: 1rem 1.5rem;
+		border-radius: 12px;
+		text-align: center;
+		backdrop-filter: blur(10px);
+	}
+
+	.experience-number {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	.experience-text {
+		font-size: 0.875rem;
+		font-weight: 500;
+		opacity: 0.9;
+	}
+
+	.cta-section {
+		text-align: center;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 968px) {
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.about h2 {
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.expertise-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.experience-badge {
+			position: static;
+			margin-top: 1rem;
+			display: inline-block;
+		}
+	}
+</style>

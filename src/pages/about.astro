@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "About Us | prestashop.supports.pro";
+const pageDescription = "Learn more about our PrestaShop development team, our mission, and our commitment to your e-commerce success.";
+const canonicalURL = "https://prestashop.supports.pro/about";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonical={canonicalURL}>
+  <Header />
+  <main>
+    <About />
+    <Contact />
+  </main>
+  <Footer />
+</Layout>

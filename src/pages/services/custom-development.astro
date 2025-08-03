@@ -1,0 +1,405 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pageTitle = "Custom PrestaShop Development Services | prestashop.supports.pro";
+const pageDescription = "Professional custom PrestaShop development services. Custom modules, theme development, API integrations, and performance optimization by certified PrestaShop experts.";
+const canonicalURL = "https://prestashop.supports.pro/services/custom-development";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonical={canonicalURL}>
+	<Fragment slot="head">
+		<!-- Open Graph -->
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:type" content="service" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content="https://prestashop.supports.pro/images/custom-development-og.jpg" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		
+		<!-- Additional SEO -->
+		<meta name="keywords" content="PrestaShop custom development, PrestaShop modules, custom themes, API integration, PrestaShop customization, e-commerce development" />
+		<meta name="author" content="prestashop.supports.pro" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Custom PrestaShop Development",
+			"description": "Professional custom PrestaShop development services including modules, themes, and integrations",
+			"provider": {
+				"@type": "Organization",
+				"name": "prestashop.supports.pro",
+				"url": "https://prestashop.supports.pro"
+			},
+			"serviceType": "Web Development",
+			"areaServed": "Worldwide",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock"
+			}
+		}
+		</script>
+	</Fragment>
+	
+	<Header />
+	<main>
+		<section class="service-hero">
+			<div class="container">
+				<div class="breadcrumb">
+					<a href="/">Home</a> / <a href="/#services">Services</a> / <span>Custom Development</span>
+				</div>
+				<h1>Custom PrestaShop Development</h1>
+				<p class="hero-subtitle">Tailored PrestaShop solutions that perfectly match your business requirements and drive growth</p>
+			</div>
+		</section>
+
+		<section class="service-content section-padding">
+			<div class="container">
+				<div class="content-grid">
+					<div class="main-content">
+						<div class="service-overview">
+							<h2>Professional Custom Development Services</h2>
+							<p>Our expert team specializes in creating bespoke PrestaShop solutions that align perfectly with your business goals. From custom modules to complete theme overhauls, we deliver high-quality, scalable solutions that enhance your e-commerce performance.</p>
+						</div>
+
+						<div class="service-features">
+							<h3>What We Offer</h3>
+							<div class="features-grid">
+								<div class="feature-item">
+									<div class="feature-icon">🔧</div>
+									<h4>Custom Module Development</h4>
+									<p>Bespoke modules tailored to your specific business needs, from payment gateways to inventory management systems.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">🎨</div>
+									<h4>Theme Customization</h4>
+									<p>Complete theme development and customization to match your brand identity and user experience requirements.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">🔗</div>
+									<h4>API Integrations</h4>
+									<p>Seamless integration with third-party services, CRM systems, ERP solutions, and external APIs.</p>
+								</div>
+								<div class="feature-item">
+									<div class="feature-icon">⚡</div>
+									<h4>Performance Optimization</h4>
+									<p>Code optimization, database tuning, and caching implementation for lightning-fast loading times.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="process-section">
+							<h3>Our Development Process</h3>
+							<div class="process-steps">
+								<div class="step">
+									<div class="step-number">1</div>
+									<h4>Requirements Analysis</h4>
+									<p>We thoroughly analyze your business needs and technical requirements to create a detailed project specification.</p>
+								</div>
+								<div class="step">
+									<div class="step-number">2</div>
+									<h4>Design & Planning</h4>
+									<p>Our team creates wireframes, technical architecture, and project timeline for your approval.</p>
+								</div>
+								<div class="step">
+									<div class="step-number">3</div>
+									<h4>Development</h4>
+									<p>Clean, efficient code development following PrestaShop best practices and coding standards.</p>
+								</div>
+								<div class="step">
+									<div class="step-number">4</div>
+									<h4>Testing & Launch</h4>
+									<p>Comprehensive testing, quality assurance, and smooth deployment to your live environment.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar">
+						<div class="cta-card">
+							<h3>Ready to Start?</h3>
+							<p>Get a free consultation and project estimate</p>
+							<a href="#contact" class="primary-button">Get Free Quote</a>
+						</div>
+
+						<div class="related-services">
+							<h4>Related Services</h4>
+							<ul>
+								<li><a href="/services/technical-support">Technical Support</a></li>
+								<li><a href="/services/design-ux">Design & UX</a></li>
+								<li><a href="/services/migration-upgrades">Migration & Upgrades</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-cta">
+			<div class="container">
+				<h2>Ready to Transform Your PrestaShop Store?</h2>
+				<p>Contact our experts today for a free consultation and custom development quote</p>
+				<a href="/#contact" class="primary-button">Start Your Project</a>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.service-hero {
+		background: linear-gradient(135deg, #0f1f3c 0%, #2c5aa0 100%);
+		color: white;
+		padding: 8rem 0 4rem;
+		margin-top: 80px;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		font-size: 0.875rem;
+		opacity: 0.8;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.service-hero h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		max-width: 600px;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+	}
+
+	.service-overview {
+		margin-bottom: 3rem;
+	}
+
+	.service-overview h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.service-overview p {
+		font-size: 1.125rem;
+		color: #4b5563;
+		line-height: 1.7;
+	}
+
+	.service-features {
+		margin-bottom: 3rem;
+	}
+
+	.service-features h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.feature-item {
+		padding: 1.5rem;
+		background: white;
+		border-radius: 12px;
+		border: 1px solid #e5e7eb;
+		transition: all 0.3s ease;
+	}
+
+	.feature-item:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-item h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.5rem;
+	}
+
+	.feature-item p {
+		color: #6b7280;
+		line-height: 1.6;
+	}
+
+	.process-section h3 {
+		font-size: 1.75rem;
+		color: #0f1f3c;
+		margin-bottom: 2rem;
+	}
+
+	.process-steps {
+		display: grid;
+		gap: 2rem;
+	}
+
+	.step {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	.step-number {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		flex-shrink: 0;
+	}
+
+	.step h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		color: #0f1f3c;
+		margin-bottom: 0.5rem;
+	}
+
+	.step p {
+		color: #6b7280;
+		line-height: 1.6;
+	}
+
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.cta-card {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.cta-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.cta-card p {
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.related-services {
+		background: #f8fafc;
+		padding: 2rem;
+		border-radius: 16px;
+	}
+
+	.related-services h4 {
+		font-size: 1.25rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.related-services ul {
+		list-style: none;
+	}
+
+	.related-services li {
+		margin-bottom: 0.75rem;
+	}
+
+	.related-services a {
+		color: #2c5aa0;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.related-services a:hover {
+		text-decoration: underline;
+	}
+
+	.contact-cta {
+		background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.contact-cta h2 {
+		font-size: 2rem;
+		color: #0f1f3c;
+		margin-bottom: 1rem;
+	}
+
+	.contact-cta p {
+		font-size: 1.125rem;
+		color: #6b7280;
+		margin-bottom: 2rem;
+	}
+
+	.primary-button {
+		background: linear-gradient(135deg, #2c5aa0, #1e40af);
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 20px rgba(44, 90, 160, 0.3);
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.primary-button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 30px rgba(44, 90, 160, 0.4);
+	}
+
+	@media (max-width: 968px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.service-hero h1 {
+			font-size: 2rem;
+		}
+	}
+</style>
